@@ -1,0 +1,225 @@
+body {
+    background-color: #F3E6D8;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin: 50px 0;
+}
+
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.outfit {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400, 600, 700;
+    font-style: normal;
+    color: hsl(24, 5%, 18%);
+}
+
+
+main {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+    max-width: 550px;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 0;
+}
+
+img {
+    width: 550px;
+    height: auto;
+    border-radius: 10px;
+    padding-bottom: 25px;
+}
+
+h1 {
+    font-family: "Young Serif", serif;
+    font-size: 2.5em;
+    font-weight: 100;
+    margin: 0;
+}
+
+p,
+li {
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+
+.preparation-time {
+    display: flex;
+    flex-direction: column;
+    background-color: #FEF6FC;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+ul {
+    padding-left: 2em;
+}
+
+ul>li {
+    line-height: 30px;
+    padding-left: 2em;
+}
+
+li::marker {
+    color: #7a284e;
+    font-weight: bold;
+}
+
+span {
+    font-weight: bold;
+}
+
+
+h3 {
+    font-family: "Outfit", sans-serif;
+    font-size: 1em;
+    color: #7a284e;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Young Serif", serif;
+    font-size: 1.5em;
+    font-weight: 100;
+    color: hsl(14, 45%, 36%);
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.ingredients,
+.instructions {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 15px;
+}
+
+
+ol {
+    padding-left: 1.5em;
+    padding-right: 0.5em;
+    text-align: justify;
+}
+
+ol>li {
+    line-height: 25px;
+    padding-left: 1em;
+}
+
+ol>li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+
+.nutrition-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+}
+
+.calories {
+    grid-area: 1 / 1 / 2 / 2;
+
+}
+
+.carbs {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.protein {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.fat {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.nutrition-grid>* {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 10px;
+}
+
+.fat,
+.value-final {
+    border-bottom: none;
+}
+
+.value,
+.value-final {
+    color: hsl(14, 45%, 36%);
+    font-weight: 800;
+    ;
+}
+
+@media (max-width: 375px) {
+    body {
+        margin: 0;
+        max-width: 375px;
+    }
+
+    main {
+        border-radius: 0;
+        padding: 0;
+        ;
+        margin: 0;
+    }
+
+    img {
+        width: 375px;
+        border-radius: 0;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin: 0 20px;
+    }
+
+    p,
+    h2 {
+        padding: 0 20px;
+    }
+
+    .preparation-time {
+        margin: 5px 20px;
+        max-width: 335px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        margin-top: 20px;
+    }
+
+    .ingredients,
+    .instructions,
+    .nutrition {
+        padding-bottom: 15px;
+        margin: 0 20px;
+    }
+
+
+    ol {
+        text-align: start;
+    }
+
+    .nutrition-grid {
+        margin: 0 20px;
+    }
+}
